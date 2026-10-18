@@ -4,8 +4,8 @@ Challenge II.8 - Adsorption on graphene: H on C8/C18 and Hg on C18 (ASE + QE)
 
 Status
 ------
-* ``H_on_C8/`` - course calculations reproduced; all H challenges done except that the last
-  relaxation (H on C18) was interrupted after 12 BFGS steps (see below).
+* ``H_on_C8/`` - course calculations reproduced; all H challenges done (the H on C18 relaxation
+  was interrupted once and later resumed from its trajectory to fmax < 0.01 eV/A).
 * ``Hg_on_C18/`` - inputs for the three adsorption sites are prepared (``run_hg_sites.sh``),
   but **not yet run**: my notebook shut down (overheating) and froze repeatedly under
   sustained DFT load, so these relaxations will be completed later on a more suitable machine.
@@ -17,9 +17,10 @@ ecutwfc 80 Ry, Gamma point, nspin = 2) reproduces the reference binding energy e
 
     E(C8)=-1303.645873  E(H)=-12.559509  E(H@C8)=-1319.069282  ->  E_b = 2.8639 eV (course reference 2.8639 eV)
 
-Challenges: ``h_adsorption_challenges.py`` (driver; all runs in ``runs/<step>/``) and
-``h_results_from_outputs.py`` (collects the energies from the QE outputs; output
-``h_results_from_outputs.py.log``):
+Challenges: ``h_adsorption_challenges.py`` (driver; all runs in ``runs/<step>/``; it re-uses
+finished steps and resumes an interrupted relaxation from its trajectory; final output
+``resume.log``). ``h_results_from_outputs.py`` collects the energies directly from the QE outputs
+(written while the C18 run was still unfinished; output ``h_results_from_outputs.py.log``):
 
 1. relaxation of the clean C8 slab,
 2. (extra) correct spin polarization of the H atom and of H@C8,
@@ -35,7 +36,7 @@ E_b = E(slab) + E(H) - E(H@slab)::
     C8 relaxed, spin-polarized         2.126     1.098         0.424
     C8, spin, ecutwfc 100 Ry           2.126     1.098         0.424
     C8, spin, ecutwfc 120 Ry           2.126     1.098         0.424
-    C18, spin (not converged)          2.838     1.109         0.509
+    C18, spin-polarized                2.841     1.111         0.509
     
     'C pucker' = height of the C atom bonded to H above the mean plane of the other C atoms
     Spin-polarization energy of the isolated H atom: 1.038 eV
@@ -55,10 +56,10 @@ Discussion
 * ecutwfc: 80 Ry is converged - E_b is unchanged (< 1 meV) at 100 and 120 Ry.
 * Geometry: H binds on top of a C atom (C-H = 1.10 A), which is pulled out of the plane by
   ~0.42 A (C8) / ~0.51 A (C18): rehybridization from sp2 to sp3 (chemisorption).
-* H on C18: the relaxation stopped at fmax = 0.12 eV/A (target 0.01), so 2.84 eV is not final;
-  the energy was still decreasing by ~10 meV per step, i.e. the converged E_b will be slightly
-  larger.
-* Even with correct spin, E_b depends strongly on the cell (2.13 eV for C8 vs >= 2.84 eV for C18)
+* H on C18: the first run stopped at fmax = 0.12 eV/A (E_b = 2.838 eV); resumed to
+  fmax < 0.01 eV/A it gives E_b = 2.841 eV (E(H@C18) = -2963.759057 eV), i.e. the last part of
+  the relaxation changed E_b by only 3 meV.
+* Even with correct spin, E_b depends strongly on the cell (2.13 eV for C8 vs 2.84 eV for C18)
   and is much larger than literature values for an isolated H on graphene (~0.7-0.9 eV with PBE in large
   supercells). The main reason is the Gamma-point-only sampling of small periodic cells: as shown in
   Challenge II.6, a 2x2 cell sampled at Gamma does not contain the Dirac point K, while a 3x3 cell
