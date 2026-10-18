@@ -1,0 +1,32 @@
+1. Course protocol (no starting magnetization, unrelaxed C8)
+   H_atom_nomag             E =     -12.559509 eV   magnetization =    nan muB   (re-used)
+   C8_unrelaxed             E =   -1303.645873 eV   magnetization =    nan muB   (re-used)
+   HC8_nomag_relax          E =   -1319.069282 eV   magnetization =    nan muB   (re-used)
+2. Relaxed C8 slab
+   C8_relax                 E =   -1303.645873 eV   magnetization =    nan muB   (re-used)
+3. Spin-polarized H atom and H@C8
+   H_atom_spin              E =     -13.597248 eV   magnetization =    nan muB   (re-used)
+   HC8_spin_relax           E =   -1319.369290 eV   magnetization =    nan muB   (re-used)
+4. Higher ecutwfc (single points, spin-polarized)
+   H_atom_spin_ecut100      E =     -13.597285 eV   magnetization =    nan muB   (re-used)
+   C8_relax_geom_ecut100    E =   -1303.653802 eV   magnetization =    nan muB   (re-used)
+   HC8_spin_geom_ecut100    E =   -1319.377189 eV   magnetization =    nan muB   (re-used)
+   H_atom_spin_ecut120      E =     -13.597365 eV   magnetization =    nan muB   (re-used)
+   C8_relax_geom_ecut120    E =   -1303.654578 eV   magnetization =    nan muB   (re-used)
+   HC8_spin_geom_ecut120    E =   -1319.378094 eV   magnetization =    nan muB   (re-used)
+5. H on C18 (3x3), spin-polarized
+   C18                      E =   -2947.320608 eV   magnetization =    nan muB   (re-used)
+   HC18_spin_relax          continuing interrupted relaxation
+   HC18_spin_relax          E =   -2963.759057 eV   magnetization =    nan muB
+
+Model                           E_b (eV)   C-H (A)  C pucker (A)
+----------------------------------------------------------------
+C8, course protocol                2.864     1.102         0.421
+C8 relaxed slab                    2.864     1.102         0.421
+C8 relaxed, spin-polarized         2.126     1.098         0.424
+C8, spin, ecutwfc 100 Ry           2.126     1.098         0.424
+C8, spin, ecutwfc 120 Ry           2.126     1.098         0.424
+C18, spin-polarized                2.841     1.111         0.509
+
+E_b = E(slab) + E(H) - E(H@slab); 'C pucker' = height of the C atom below H above the mean C plane
+Spin-polarization energy of the isolated H atom: E(H, non-magnetic) - E(H, spin) = 1.038 eV
