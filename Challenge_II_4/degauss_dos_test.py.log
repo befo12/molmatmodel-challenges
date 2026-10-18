@@ -1,0 +1,10 @@
+degauss/Ry  sigma/eV  gap in DOS/eV  VBM-EF/eV  CBM-EF/eV
+     0.002     0.027           0.56      -0.28       0.28
+     0.005     0.068           0.51      -0.25       0.26
+     0.010     0.136           0.38      -0.19       0.19
+     0.020     0.272         closed          -          -
+     0.050     0.680         closed          -          -
+(gap in DOS = width of the region with DOS < 0.01 states/eV around E_F)
+Kohn-Sham (PBE) band gap from NSCF eigenvalues: 0.611 eV  (VBM 6.016 eV, CBM 6.627 eV)
+Experimental band gap of Si: 1.12 eV (indirect)
+Figures: dos_pdos_si.png, degauss_test/dos_vs_degauss.png

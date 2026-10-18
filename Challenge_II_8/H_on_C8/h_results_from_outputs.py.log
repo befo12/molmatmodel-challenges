@@ -1,0 +1,28 @@
+H_atom_nomag             E =       -12.559509 eV
+C8_unrelaxed             E =     -1303.645873 eV
+HC8_nomag_relax          E =     -1319.069282 eV
+C8_relax                 E =     -1303.645873 eV
+H_atom_spin              E =       -13.597248 eV
+HC8_spin_relax           E =     -1319.369290 eV
+H_atom_spin_ecut100      E =       -13.597285 eV
+C8_relax_geom_ecut100    E =     -1303.653802 eV
+HC8_spin_geom_ecut100    E =     -1319.377189 eV
+H_atom_spin_ecut120      E =       -13.597365 eV
+C8_relax_geom_ecut120    E =     -1303.654578 eV
+HC8_spin_geom_ecut120    E =     -1319.378094 eV
+C18                      E =     -2947.320608 eV
+HC18_spin_relax          E =     -2963.755740 eV  (BFGS step 12, fmax = 0.122 eV/A, not converged)
+
+Model                           E_b (eV)   C-H (A)  C pucker (A)
+----------------------------------------------------------------
+C8, course protocol                2.864     1.102         0.421
+C8 relaxed slab                    2.864     1.102         0.421
+C8 relaxed, spin-polarized         2.126     1.098         0.424
+C8, spin, ecutwfc 100 Ry           2.126     1.098         0.424
+C8, spin, ecutwfc 120 Ry           2.126     1.098         0.424
+C18, spin (not converged)          2.838     1.109         0.509
+
+'C pucker' = height of the C atom bonded to H above the mean plane of the other C atoms
+Spin-polarization energy of the isolated H atom: 1.038 eV
+Energy change on relaxing the clean C8 slab: 0.00 meV
+Magnetic moment: H atom 1.00 muB, H@C8 1.00 muB (spin-polarized runs), see runs/*/espresso.pwo

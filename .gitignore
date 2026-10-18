@@ -1,0 +1,12 @@
+# large scratch / restart files of QE, NWChem and ASE (not needed to verify the results)
+tmp/
+outdir/
+*.save/
+*.wfc*
+*.mix*
+*.movecs
+*.db
+*.hess
+*.gridpts.*
+__pycache__/
+*.broken

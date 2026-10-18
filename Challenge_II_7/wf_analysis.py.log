@@ -1,0 +1,7 @@
+Run                            E_F/eV  V_vac/eV    W/eV  V(z=0)/eV
+------------------------------------------------------------------
+with assume_isolated = 2D     -4.2405    0.0020   4.243     14.585
+without assume_isolated       -1.7174    2.5230   4.240      2.523
+
+Literature: graphene W ~ 4.5-4.6 eV (experiment), ~4.2-4.3 eV (PBE)
+Figure: work_function_comparison.png

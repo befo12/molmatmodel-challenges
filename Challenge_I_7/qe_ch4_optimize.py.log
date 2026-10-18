@@ -1,0 +1,7 @@
+Optimized C-H bond lengths (A): 1.0941, 1.0941, 1.0941, 1.0941
+H-C-H angles (deg):             109.47, 109.47, 109.47, 109.47, 109.47, 109.47
+Final energy (eV): -228.6940   BFGS steps: 2
+
+                QE (PBE)      Exp.     Diff.
+r(C-H) / A        1.0941    1.0870   +0.0071
+H-C-H / deg       109.47    109.47     +0.00

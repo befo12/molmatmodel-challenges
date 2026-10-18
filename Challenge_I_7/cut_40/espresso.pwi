@@ -1,0 +1,45 @@
+&CONTROL
+   calculation      = 'scf'
+   outdir           = './outdir'
+   pseudo_dir       = '/home/berfin/challenges/Challenge_I_7'
+/
+&SYSTEM
+   ibrav            = 0
+   ecutwfc          = 40
+   nosym            = .true.
+   occupations      = 'smearing'
+   degauss          = 0.02
+   smearing         = 'gaussian'
+   ntyp             = 2
+   nat              = 5
+/
+&ELECTRONS
+   conv_thr         = 1e-08
+/
+&IONS
+/
+&CELL
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+C 12.011 C.upf
+H 1.008 H.upf
+
+K_POINTS automatic
+1 1 1  0 0 0
+
+CELL_PARAMETERS angstrom
+12.00000000000000 0.00000000000000 0.00000000000000
+0.00000000000000 12.00000000000000 0.00000000000000
+0.00000000000000 0.00000000000000 12.00000000000000
+
+ATOMIC_POSITIONS angstrom
+C 6.0000000081 5.9999999592 6.0000000122  
+H 6.6316657500 6.6316657614 6.6316657423  
+H 5.3683342569 5.3683342569 6.6316657353  
+H 6.6316657353 5.3683342684 5.3683342606  
+H 5.3683342496 6.6316657541 5.3683342419  
+

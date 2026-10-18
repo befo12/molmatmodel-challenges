@@ -1,0 +1,55 @@
+&CONTROL
+   verbosity        = 'low'
+   tprnfor          = .true.
+   outdir           = './tmp'
+   prefix           = 'calc'
+   pseudo_dir       = '/home/berfin/challenges/Challenge_II_8/H_on_C8'
+/
+&SYSTEM
+   ecutwfc          = 80
+   occupations      = 'smearing'
+   degauss          = 0.01
+   smearing         = 'gauss'
+   nspin            = 2
+   vdw_corr         = 'DFT-D3'
+   dftd3_version    = 4
+   starting_magnetization(1) = 0.0
+   starting_magnetization(2) = 1.0
+   ntyp             = 2
+   nat              = 9
+   ibrav            = 0
+/
+&ELECTRONS
+   conv_thr         = 1e-10
+/
+&IONS
+/
+&CELL
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+C  12.011 C.upf
+H  1.008 H.upf
+
+K_POINTS automatic
+1 1 1  0 0 0
+
+CELL_PARAMETERS angstrom
+4.93264818190000 0.00000000000000 0.00000000000000
+-2.46632465980000 4.27179830510000 0.00000000000000
+0.00000000000000 0.00000000000000 15.00000000000000
+
+ATOMIC_POSITIONS angstrom
+C  -0.0198895157 0.0114832253 7.3745568944  
+C  -1.2331623300 2.1129327196 7.3745568944  
+C  2.4862136067 0.0114832253 7.3745568944  
+C  1.2331617610 2.1358991530 7.8411414325  
+C  -0.0339830768 1.4043126546 7.4154865441  
+C  -1.2331625190 3.5598318360 7.5496570235  
+C  2.5003066408 1.4043126796 7.4154865441  
+C  1.2331614240 3.5990719070 7.4154865441  
+H  1.2331617610 2.1358991530 8.9390710832  
+

@@ -1,0 +1,4 @@
+&DOS
+  prefix='Si_Electronic', outdir='./tmp', DeltaE=0.01, Emin=-20.0, Emax=20.0,
+  ngauss=0, degauss=0.05, fildos='degauss_test/dos_dg0.05.dat'
+/

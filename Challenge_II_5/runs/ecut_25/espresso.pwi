@@ -1,0 +1,39 @@
+&CONTROL
+   calculation      = 'scf'
+   outdir           = './tmp'
+   pseudo_dir       = '/home/berfin/challenges/Challenge_II_5'
+/
+&SYSTEM
+   ecutwfc          = 25
+   occupations      = 'smearing'
+   degauss          = 0.01
+   smearing         = 'gauss'
+   ntyp             = 1
+   nat              = 1
+   ibrav            = 0
+/
+&ELECTRONS
+   conv_thr         = 1e-10
+/
+&IONS
+/
+&CELL
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Al 26.9815385 Al.upf
+
+K_POINTS automatic
+12 12 12  0 0 0
+
+CELL_PARAMETERS angstrom
+0.00000000000000 2.02475000000000 2.02475000000000
+2.02475000000000 0.00000000000000 2.02475000000000
+2.02475000000000 2.02475000000000 0.00000000000000
+
+ATOMIC_POSITIONS angstrom
+Al 0.0000000000 0.0000000000 0.0000000000  
+

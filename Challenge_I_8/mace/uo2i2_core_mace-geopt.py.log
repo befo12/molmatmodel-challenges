@@ -1,0 +1,74 @@
+WARNING:root:'model_path' argument is deprecated, please use 'model_paths' in the future.
+WARNING:root:No dtype selected, switching to float64 to match model dtype.
+[0;32m✓ Found model: macempa0mediummodel[0m
+
+[0;32m================================================================================[0m
+[0;32m[1m  UO₂I₂(OH₂)₂ MACE Optimization  [0m
+[0;32m================================================================================[0m
+
+[0;34mStructure information:[0m
+  Atoms: 11
+  Elements: {'H', 'U', 'O', 'I'}
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+[0;32m✓ MACE model loaded successfully[0m
+[0;34m✓ Constraining Uranium atom (index: 0)[0m
+[0;32m✓ Optimization setup complete[0m
+
+[0;36m================================================================================[0m
+[1mRunning Geometry Optimization[0m
+[0;36m================================================================================[0m
+
+  Step     Energy (eV)     Max Force (eV/Å)   Time (s)
+-------------------------------------------------------
+  Init      -61.803058                                
+      Step     Time          Energy          fmax
+BFGS:    0 20:37:25      -61.803058        1.388070
+BFGS:    1 20:37:25      -61.894433        1.084456
+BFGS:    2 20:37:25      -61.962257        0.831939
+BFGS:    3 20:37:26      -61.999711        0.456943
+BFGS:    4 20:37:26      -62.023262        0.403479
+BFGS:    5 20:37:26      -62.052072        0.478891
+BFGS:    6 20:37:26      -62.082124        0.466653
+BFGS:    7 20:37:26      -62.120585        0.636694
+BFGS:    8 20:37:26      -62.150240        0.493543
+BFGS:    9 20:37:26      -62.161835        0.292695
+BFGS:   10 20:37:26      -62.166304        0.238202
+BFGS:   11 20:37:27      -62.170201        0.199437
+BFGS:   12 20:37:27      -62.175098        0.254712
+BFGS:   13 20:37:27      -62.178435        0.164425
+BFGS:   14 20:37:27      -62.179383        0.042397
+-------------------------------------------------------
+ Final      -62.179383                             2.3
+
+[0;32m✓ Optimization complete![0m
+  Initial energy: -61.803058 eV
+  Final energy:   -62.179383 eV
+  Energy change:  -0.376324 eV
+  Time elapsed:   2.3 seconds
+
+[0;36m================================================================================[0m
+[1mGeometry Comparison: Paper vs Initial vs MACE Optimized[0m
+[0;36m================================================================================[0m
+
+[1mBond Lengths (Å):[0m
+Bond                 Paper        Initial      Optimized    Difference     
+---------------------------------------------------------------------------
+U=O (avg)            1.7730       1.7730       1.7938       +0.0208 Å  ✓
+U-I (avg)            3.0267       3.0267       2.9527       -0.0740 Å  ✓
+O-H (avg)            0.9500       0.9513       0.9735       +0.0235 Å  ✓
+
+[1mBond Angles (degrees):[0m
+Angle                     Paper        Initial      Optimized    Difference     
+--------------------------------------------------------------------------------
+O=U=O                     180.00       180.00       180.00         +0.00°  ✓
+I-U-I                     180.00       180.00       180.00         +0.00°  ✓
+O(water)-U-O(water)       180.00       180.00       180.00         +0.00°  ✓
+O(water)-U-I              90.27        90.00        90.00          -0.27°  ✓
+O=U-I                     89.00        90.00        90.00          +1.00°  ✓
+
+[1mSummary:[0m
+  [0;32m✓ U=O bond length matches paper within 0.1 Å[0m
+  [0;32m✓ U-I bond length matches paper within 0.1 Å[0m
+✓ Paper-based initial structure: uo2i2_paper_initial.xyz
+✓ Initial structure (before optimization): uo2i2_initial.xyz
+✓ Optimized structure: uo2i2_optimized.xyz and uo2i2_optimized.cif

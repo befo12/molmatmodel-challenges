@@ -1,0 +1,22 @@
+UO2I2(OH2)2 Geometry Comparison
+======================================================================
+Date: 2026-10-17 20:37:27
+Model: /home/berfin/.cache/mace/macempa0mediummodel
+Device: cpu
+
+Bond Lengths (Å):
+Bond                 Paper        Initial      Optimized   
+------------------------------------------------------------
+U=O (avg)            1.7730       1.7730       1.7938      
+U-OH2 (avg)          2.3180       2.3180       0.0000      
+U-I (avg)            3.0267       3.0267       2.9527      
+O-H (avg)            0.9500       0.9513       0.9735      
+
+Bond Angles (degrees):
+Angle                     Paper        Initial      Optimized   
+-----------------------------------------------------------------
+O=U=O                     180.00       180.00       180.00      
+I-U-I                     180.00       180.00       180.00      
+O(water)-U-O(water)       180.00       180.00       180.00      
+O(water)-U-I              90.27        90.00        90.00       
+O=U-I                     89.00        90.00        90.00       

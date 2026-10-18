@@ -1,0 +1,41 @@
+1. ecutwfc convergence at k = 12x12x12, a = 4.0495 A (tolerance 1.0 meV/atom)
+   ecutwfc =  20 Ry  E = -63.024195 eV
+   ecutwfc =  25 Ry  E = -63.053553 eV  dE =  -29.358 meV
+   ecutwfc =  30 Ry  E = -63.066903 eV  dE =  -13.350 meV
+   ecutwfc =  35 Ry  E = -63.073261 eV  dE =   -6.358 meV
+   ecutwfc =  40 Ry  E = -63.073970 eV  dE =   -0.710 meV
+>>> ecutwfc converged at 40 Ry
+
+2. k-point convergence at ecutwfc = 40 Ry
+   k =  4x 4x 4  E = -62.785235 eV
+   k =  6x 6x 6  E = -63.132660 eV  dE = -347.426 meV
+   k =  8x 8x 8  E = -63.061466 eV  dE =   71.194 meV
+   k = 10x10x10  E = -63.048593 eV  dE =   12.873 meV
+   k = 12x12x12  E = -63.073970 eV  dE =  -25.377 meV
+   k = 14x14x14  E = -63.059043 eV  dE =   14.927 meV
+   k = 16x16x16  E = -63.071392 eV  dE =  -12.349 meV
+   k = 18x18x18  E = -63.064384 eV  dE =    7.008 meV
+   k = 20x20x20  E = -63.065934 eV  dE =   -1.549 meV
+   k = 22x22x22  E = -63.067919 eV  dE =   -1.985 meV
+   k = 24x24x24  E = -63.065082 eV  dE =    2.837 meV
+   k = 26x26x26  E = -63.067645 eV  dE =   -2.563 meV
+   k = 28x28x28  E = -63.065947 eV  dE =    1.697 meV
+   k = 30x30x30  E = -63.066869 eV  dE =   -0.922 meV
+>>> k-points converged at 30x30x30
+
+3. Equation of state around a_exp (ecutwfc = 40 Ry, k = 30)
+   a = 3.9280 A  V = 15.1516 A^3  E = -63.038411 eV
+   a = 3.9685 A  V = 15.6251 A^3  E = -63.056330 eV
+   a = 4.0090 A  V = 16.1083 A^3  E = -63.065523 eV
+   a = 4.0495 A  V = 16.6014 A^3  E = -63.066869 eV
+   a = 4.0900 A  V = 17.1044 A^3  E = -63.061185 eV
+   a = 4.1305 A  V = 17.6175 A^3  E = -63.049226 eV
+   a = 4.1710 A  V = 18.1408 A^3  E = -63.031683 eV
+>>> relaxed a0 = 4.0365 A (exp. 4.0495 A, -0.32 %), V0 = 16.4416 A^3, B = 78.2 GPa (exp. ~76 GPa)
+
+4. Electronic properties with a0 = 4.0365 A, ecutwfc = 40 Ry, k(SCF) = 30, k(NSCF) = 60:
+  7. Verifying TDOS vs summed PDOS (ONLY below Fermi level)...
+  Fermi level from NSCF calculation: 7.9751 eV
+  Integrated TDOS: 2.9979 states
+  Integrated sum of PDOS: 2.9539 states
+  Relative difference in integrated DOS: 1.47%

@@ -1,0 +1,22 @@
+Using Materials Project MACE for MACECalculator with /home/berfin/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+done: H2
+done: N2
+done: O2
+done: F2
+done: Cl2
+done: CO
+done: HF
+
+T = 298.15 K, p = 1 bar; H and G are given relative to the electronic energy E_pot
+Mol |    r/A |  w_MACE   w_exp    err |  ZPE/eV  H-E/eV |  S_MACE   S_exp    err |  G-E/eV
+--------------------------------------------------------------------------------------------------
+H2  |  0.747 |    4436    4401  +0.8% |   0.275   0.365 |  130.47  130.68  -0.2% |  -0.038
+N2  |  1.112 |    2347    2359  -0.5% |   0.146   0.235 |  191.79  191.61  +0.1% |  -0.357
+O2  |  1.237 |    1419    1580 -10.2% |   0.088   0.178 |  205.51  205.15  +0.2% |  -0.457
+F2  |  1.456 |     676     917 -26.3% |   0.042   0.135 |  204.00  202.79  +0.6% |  -0.495
+Cl2 |  1.981 |     586     560  +4.7% |   0.036   0.131 |  222.67  223.08  -0.2% |  -0.557
+CO  |  1.143 |    2018    2170  -7.0% |   0.125   0.215 |  197.83  197.66  +0.1% |  -0.396
+HF  |  0.942 |    3767    4138  -9.0% |   0.234   0.323 |  174.04  173.78  +0.1% |  -0.214
+
+w in cm-1, S in J/(mol K).
