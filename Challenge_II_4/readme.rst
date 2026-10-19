@@ -2,6 +2,12 @@
 Challenge II.4 - Electronic properties of Si (charge density, Lowdin, DOS, PDOS)
 ================================================================================
 
+Task
+----
+Electronic properties of Si (charge density, Lowdin charges, DOS, PDOS).
+Challenge (course ``readme.rst``): "Modify the input parameters in the Si ASE script and test the
+effects of different values of Gaussian broadening (degauss)."
+
 Exercise
 --------
 ``electronic_properties_si.py`` (course script; only the QE executables changed to the conda

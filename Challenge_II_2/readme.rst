@@ -2,6 +2,15 @@
 Challenge II.2 - Automated cutoff and k-point convergence (ASE + QE)
 ====================================================================
 
+Task
+----
+Automated cutoff and k-point convergence test (ASE-driven QE) for the Si unit cell.
+Course tasks and challenge: "TASK 2.2 - run a final QE SCF calculation with the converged ecutwfc and
+k-points, with tstress and tprnfor, and inspect the stress and forces. TASK 2.3 - shift the atoms
+manually and run the convergence again. Challenge - find different pseudopotentials, update the
+convergence test (ASE) code, run it for each, and make a table of energy cutoffs and k-points of
+the various pseudopotentials using Si as an example."
+
 Task 2.1 - automated convergence test
 -------------------------------------
 Course script ``convergence_test_si.py`` (ecutwfc 20-115 Ry in 5 Ry steps at k = 13x13x13,

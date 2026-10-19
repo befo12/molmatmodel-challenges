@@ -2,6 +2,13 @@
 Challenge II.6 - Graphene: convergence, 2D cell relaxation, DOS/PDOS
 ====================================================================
 
+Task
+----
+Graphene: build the unit cell, run convergence tests, relax the cell and calculate the electronic
+properties. Challenge (course ``readme.rst``): "Repeat the DOS calculations using a series of k-point
+grids lower than the converged one, e.g. 12x12x1, 18x18x1, and compare the electronic structure at
+the Gamma point for each calculation. How about trying an 'even' grid, e.g. 20x20x1?"
+
 Exercise (course scripts, only the QE executables changed; each step in its own directory)
 ------------------------------------------------------------------------------------------
 * ``convergence_test_graphene/`` - Step 6.1: graphene (c = 15 A vacuum, ``assume_isolated = '2D'``),

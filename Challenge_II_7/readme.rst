@@ -2,6 +2,12 @@
 Challenge II.7 - Work function of graphene (ASE + QE)
 =====================================================
 
+Task
+----
+Work function of graphene: planar-averaged electrostatic potential and work function with ASE + QE.
+Challenge (course overview): "Simply redo the calculations and save the output files." In addition,
+the run was repeated without the 2D Coulomb cutoff (see below).
+
 Runs
 ----
 Course script ``work_function.py`` (SCF 100 Ry, k = 27x27x1 -> ``pp.x`` electrostatic potential

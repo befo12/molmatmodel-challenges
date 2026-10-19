@@ -2,6 +2,13 @@
 Challenge II.1 - Total energy of the Si unit cell (QE and ASE-driven QE)
 ========================================================================
 
+Task
+----
+Calculate the total energy of the Si unit cell with Quantum ESPRESSO and with ASE-driven QE.
+Challenge (course ``readme.rst``): "Modify the ecutwfc in the input file and check how it changes the
+total energy. Find different pseudopotentials for Si crystal from
+http://pseudopotentials.quantum-espresso.org/legacy_tables or from other resources."
+
 Exercise
 --------
 * Step 1: SCF calculation directly with Quantum ESPRESSO 7.6: ``mpirun -np 4 pw.x < Si.in > Si.out``

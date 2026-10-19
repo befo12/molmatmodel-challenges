@@ -2,6 +2,13 @@
 Challenge II.5 - Electronic properties of Al (fcc metal)
 ==================================================================
 
+Task
+----
+Electronic properties of Al.
+Challenge (course ``readme.rst``): "Find an experimental Al structure from databases, run a convergence
+test and cell relaxation. Then recalculate the electronic properties using the relaxed unit cell and
+the optimized cutoff and k-points."
+
 Exercise
 --------
 Course script ``electronic_properties_al.py`` (Materials Project cell, a = 4.0389 A, ecutwfc = 65 Ry,

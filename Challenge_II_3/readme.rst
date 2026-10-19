@@ -2,6 +2,12 @@
 Challenge II.3 - Cell relaxation of Si (QE and ASE-QE)
 =========================================================
 
+Task
+----
+Geometry relaxation (QE and ASE-driven QE) of the Si unit cell.
+Challenge (course ``readme.rst``): "For the cell relaxation (both QE and ASE-QE), use custom, tighter
+values of etot_conv_thr and forc_conv_thr, shift the atoms manually and run the convergence again."
+
 Runs
 ----
 * ``default/`` - course inputs unchanged (only ``pw_command = 'mpirun -np 6 pw.x'``):

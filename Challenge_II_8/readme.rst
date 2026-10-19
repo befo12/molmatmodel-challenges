@@ -2,6 +2,17 @@
 Challenge II.8 - Adsorption on graphene: H on C8/C18 and Hg on C18 (ASE + QE)
 =============================================================================
 
+Task
+----
+Adsorption on graphene. Challenges (course ``readme.rst`` files):
+
+* H on C8: "Modify the Python script to perform the relaxation of the C8 slab and calculate the new
+  adsorption energy. Likewise, increase the ecutwfc parameter to see if this improves the binding
+  energy of H on C8. Enlarge the slab to C18 as for the Hg atom adsorption, and compute the
+  adsorption energy."
+* Hg on C18: "Calculate the adsorption energy of Hg on 3 different adsorption sites of the C18 slab:
+  on-top, on-bridge, on-hollow."
+
 Status
 ------
 * ``H_on_C8/`` - course calculations reproduced; all H challenges done (the H on C18 relaxation
