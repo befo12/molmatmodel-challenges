@@ -69,11 +69,12 @@ Challenge           Main result
                     0.88 eV gap.
 ``Challenge_II_7``  Work function of graphene W = 4.24 eV, identical with and without the 2D
                     Coulomb cutoff although E_F differs by 2.5 eV.
-``Challenge_II_8``  H on graphene: course result reproduced; correct spin polarization lowers
-                    E_b from 2.86 to 2.13 eV; cutoff converged; cell-size / k-point dependence.
-                    Hg on C18: on-top site reproduces the course E_ads = -0.24 eV; bridge and
-                    hollow (-0.51, -0.67 eV) are dominated by a Kekule-type distortion of the
-                    graphene, most likely an artefact of the Gamma-only 3x3 cell.
+``Challenge_II_8``  H on graphene: course result reproduced; correct spin lowers E_b from 2.86 to
+                    2.13 eV; with k-points (follow-up) E_b = 0.83-0.84 eV, in agreement with the
+                    literature (0.75-0.77 eV, PBE). Hg on C18: on-top reproduces the course
+                    E_ads = -0.24 eV; the Gamma-only bridge / hollow values (-0.51, -0.67 eV) are a
+                    Kekule-distortion artefact; with k-points all sites give -0.19 to -0.20 eV.
+                    MACE-MP / MPA-0 (+D3) compared with DFT for Hg.
 ==================  ===========================================================================
 
 Large scratch files of the codes (wavefunctions, QE ``tmp/`` directories, NWChem ``*.db`` and

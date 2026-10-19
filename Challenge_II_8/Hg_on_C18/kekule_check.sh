@@ -1,10 +1,7 @@
 #!/bin/bash
-# Challenge II.8 (Hg on C18) - follow-up test of the graphene distortion (not yet run).
-# Single points (course settings, energy_c18.py) of the relaxed bridge / hollow structures with the
-# Hg atom removed. If E(distorted C18) is clearly below the flat C18 (-2947.320598 eV), the energy
-# gained during the bridge / hollow relaxations comes from the graphene itself (artefact of the
-# Gamma-only 3x3 cell), not from the Hg-graphene interaction.
-# Run in this directory:  bash kekule_check.sh      (2 SCF runs, ~1 min each with 4 MPI processes)
+# Challenge II.8 (Hg on C18) - test of the graphene distortion: single points (course settings,
+# energy_c18.py) of the relaxed bridge / hollow structures with the Hg atom removed, compared with
+# the flat C18 (-2947.320598 eV). Run in this directory:  bash kekule_check.sh
 export OMP_NUM_THREADS=1
 set -e
 for s in bridge hollow; do

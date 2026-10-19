@@ -1,0 +1,39 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+Using Materials Project MACE for MACECalculator with /home/berfin/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+
+MACE-MP medium: E(Hg) = 0.090456 eV, E(C18 flat) = -165.385550 eV, E(C18 relaxed) = -165.385550 eV
+start    E_ads flat/eV  E_ads relaxed/eV   final  h(Hg)/A  C-C min/max (A)  steps
+top              0.257            -0.013     top    4.722    1.425/1.425     21
+bridge           0.256            -0.013  bridge    4.729    1.425/1.425     20
+hollow           0.244            -0.013  hollow    4.775    1.424/1.425     15
+Using medium MPA-0 model as default MACE-MP model, to use previous (before 3.10) default model please specify 'medium' as model argument
+Using Materials Project MACE for MACECalculator with /home/berfin/.cache/mace/macempa0mediummodel
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+
+MACE-MP medium-mpa-0: E(Hg) = -0.124547 eV, E(C18 flat) = -165.637411 eV, E(C18 relaxed) = -165.637411 eV
+start    E_ads flat/eV  E_ads relaxed/eV   final  h(Hg)/A  C-C min/max (A)  steps
+top              0.361            -0.178     top    4.631    1.424/1.426     18
+bridge           0.365            -0.172  bridge    4.588    1.424/1.426     17
+hollow           0.345            -0.161  hollow    4.558    1.424/1.425     16
+Using Materials Project MACE for MACECalculator with /home/berfin/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+Using TorchDFTD3Calculator for D3 dispersion corrections
+
+MACE-MP medium + D3(BJ): E(Hg) = 0.089445 eV, E(C18 flat) = -166.980734 eV, E(C18 relaxed) = -166.980734 eV
+start    E_ads flat/eV  E_ads relaxed/eV   final  h(Hg)/A  C-C min/max (A)  steps
+top              0.038            -0.111     top    4.374    1.425/1.426     21
+bridge           0.037            -0.110  bridge    4.364    1.425/1.426     19
+hollow           0.025            -0.107  hollow    4.412    1.424/1.425     15
+Using medium MPA-0 model as default MACE-MP model, to use previous (before 3.10) default model please specify 'medium' as model argument
+Using Materials Project MACE for MACECalculator with /home/berfin/.cache/mace/macempa0mediummodel
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+Using TorchDFTD3Calculator for D3 dispersion corrections
+
+MACE-MP medium-mpa-0 + D3(BJ): E(Hg) = -0.125558 eV, E(C18 flat) = -167.232595 eV, E(C18 relaxed) = -167.232595 eV
+start    E_ads flat/eV  E_ads relaxed/eV   final  h(Hg)/A  C-C min/max (A)  steps
+top              0.142            -0.273     top    4.561    1.424/1.426     17
+bridge           0.146            -0.269  bridge    4.514    1.424/1.426     16
+hollow           0.125            -0.260  hollow    4.495    1.424/1.425     16
+
+E_ads flat = Hg at 3.4 A over flat graphene (no relaxation); relaxed = full BFGS relaxation

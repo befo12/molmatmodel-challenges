@@ -1,0 +1,14 @@
+H atom (spin, Gamma, 10 A box)   E = -13.597248 eV  m = 1.0
+C8 (2x2)   k=6x6x1  E(slab) = -1312.051591  E(H@slab) = -1326.477272  E_b = 0.828 eV  (10 SCF steps)
+C18 (3x3)  k=4x4x1  E(slab) = -2952.115412  E(H@slab) = -2966.556737  E_b = 0.844 eV  (12 SCF steps)
+C8 (2x2)   k=1x1x1  E(slab) = -1303.645871  E(H@slab) = -1319.369290  E_b = 2.126 eV  (1 SCF steps)
+C18 (3x3)  k=1x1x1  E(slab) = -2947.320598  E(H@slab) = -2963.462347  E_b = 2.545 eV  (4 SCF steps)
+
+Spin-polarized binding energy of H on graphene
+cell         k-grid   E_b/eV   C-H/A  pucker/A   m/muB   Casolo 2009 (PBE, 6x6x1)
+C8 (2x2)   6x6x   1    0.828   1.128     0.333    1.00   0.75 eV, 0.36 A
+C18 (3x3)  4x4x   1    0.844   1.126     0.403    1.02   0.77 eV, 0.42 A
+C8 (2x2)   1x1x   1    2.126   1.098     0.424    1.00   0.75 eV, 0.36 A
+C18 (3x3)  1x1x   1    2.545   1.111     0.509    0.00   0.77 eV, 0.42 A
+
+pucker = height of the H-bonded C atom above the mean plane of the other C atoms

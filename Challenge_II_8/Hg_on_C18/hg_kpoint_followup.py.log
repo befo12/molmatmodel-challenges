@@ -1,0 +1,35 @@
+k-grid 1x1x1
+   C18_flat                   k=1x1x1  E =     -2947.320598 eV
+   Hg_atom                    k=1x1x1  E =     -4533.787985 eV
+   HgC18_top_flat             k=1x1x1  E =     -7481.345473 eV
+   HgC18_bridge_flat          k=1x1x1  E =     -7481.345805 eV
+   HgC18_hollow_flat          k=1x1x1  E =     -7481.348481 eV
+   C18_bridge_distorted       k=1x1x1  E =     -2947.592411 eV
+   HgC18_bridge_relaxedGamma  k=1x1x1  E =     -7481.618851 eV
+   C18_hollow_distorted       k=1x1x1  E =     -2947.740349 eV
+   HgC18_hollow_relaxedGamma  k=1x1x1  E =     -7481.774037 eV
+k-grid 3x3x1
+   C18_flat                   k=3x3x1  E =     -2952.041699 eV
+   Hg_atom                    k=3x3x1  E =     -4533.787357 eV
+   HgC18_top_flat             k=3x3x1  E =     -7486.022876 eV
+   HgC18_bridge_flat          k=3x3x1  E =     -7486.023775 eV
+   HgC18_hollow_flat          k=3x3x1  E =     -7486.031030 eV
+   C18_bridge_distorted       k=3x3x1  E =     -2951.618896 eV
+   HgC18_bridge_relaxedGamma  k=3x3x1  E =     -7485.603152 eV
+   C18_hollow_distorted       k=3x3x1  E =     -2951.568992 eV
+   HgC18_hollow_relaxedGamma  k=3x3x1  E =     -7485.557807 eV
+k-grid 6x6x1
+   C18_flat                   k=6x6x1  E =     -2952.151553 eV
+   Hg_atom                    k=6x6x1  E =     -4533.787357 eV
+   HgC18_top_flat             k=6x6x1  E =     -7486.132551 eV
+   HgC18_bridge_flat          k=6x6x1  E =     -7486.133464 eV
+   HgC18_hollow_flat          k=6x6x1  E =     -7486.140842 eV
+   C18_bridge_distorted       k=6x6x1  E =     -2951.664718 eV
+   HgC18_bridge_relaxedGamma  k=6x6x1  E =     -7485.648874 eV
+   C18_hollow_distorted       k=6x6x1  E =     -2951.613650 eV
+   HgC18_hollow_relaxedGamma  k=6x6x1  E =     -7485.602156 eV
+
+k-grid   E_ads flat: top / bridge / hollow   E_dist: bridge / hollow   E_ads Gamma-relaxed: bridge / hollow  (eV)
+1x1x1      -0.237   -0.237   -0.240     -0.272   -0.420     -0.510   -0.665
+3x3x1      -0.194   -0.195   -0.202      0.423    0.473      0.226    0.271
+6x6x1      -0.194   -0.195   -0.202      0.487    0.538      0.290    0.337
