@@ -1,6 +1,6 @@
 #!/bin/bash
 # Challenge II.8 (Hg on C18): course runs (on-top site) + bridge and hollow sites, then summary.
-# Run in this directory:  bash run_hg_sites.sh      (each relaxation ~10-20 min with 4 MPI processes)
+# Run in this directory:  bash run_hg_sites.sh      (4 MPI processes: on-top 4 min, bridge 66 min, hollow 5 min)
 export OMP_NUM_THREADS=1
 set -e
 [ -f energy_c18.out ] || (mkdir -p sp_c18 && cd sp_c18 && cp ../energy_c18.py ../c18.vasp ../C.upf . && python energy_c18.py > ../energy_c18.out 2>&1)

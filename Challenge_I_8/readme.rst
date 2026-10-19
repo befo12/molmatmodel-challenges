@@ -11,11 +11,11 @@ Calculations (outputs in ``*.log``)
 -----------------------------------
 1. MACE optimization: ``mace/uo2i2_core_mace-geopt.py`` (9 s).
 2. NWChem B3LYP single point, Stuttgart RLC ECP (U, I), 3-21G* (O, H):
-   ``nwchem/uo2i2water2_b3lyp_stuttgart_rlc_ecp.nw`` (6 MPI, 82 s), E = -377.647069 Hartree.
+   ``nwchem/uo2i2water2_b3lyp_stuttgart_rlc_ecp.nw`` (6 MPI, 82 s), E = -377.647069 Hartree (identical to the course reference).
 3. NWChem B3LYP geometry optimization, same basis/ECP:
    ``nwchem/geopt/uo2i2water2_ecp_b3lyp_geopt.nw`` (6 MPI, 133 s, converged).
 
-``bonds_u.py`` extracts the bond lengths from the final NWChem geometry.
+``bonds_u.py <nwchem output>`` extracts the bond lengths from the final NWChem geometry.
 
 Results (average bond lengths, Angstrom; linear O=U=O, I-U-I, Ow-U-Ow)
 ------------------------------------------------------------------------

@@ -33,7 +33,7 @@ Task 2.2 - forces and stress at the converged settings
 modified copy ``Si_shifted_force_stress.in`` in which the first Si atom is displaced by
 +0.1 A along x (idea of task 2.3: shift the atoms manually)::
 
-    Si_force_stress:
+    Si_force_stress (course reference: -16.92488384 Ry, P = 19.93 kbar):
     !    total energy              =     -16.92488372 Ry
          atom    1 type  1   force =     0.00000000   -0.00000000    0.00000000
          atom    2 type  1   force =     0.00000000    0.00000000    0.00000000

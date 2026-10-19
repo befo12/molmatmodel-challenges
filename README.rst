@@ -71,7 +71,9 @@ Challenge           Main result
                     Coulomb cutoff although E_F differs by 2.5 eV.
 ``Challenge_II_8``  H on graphene: course result reproduced; correct spin polarization lowers
                     E_b from 2.86 to 2.13 eV; cutoff converged; cell-size / k-point dependence.
-                    Hg on C18 (three sites): inputs prepared, runs pending (see readme).
+                    Hg on C18: on-top site reproduces the course E_ads = -0.24 eV; bridge and
+                    hollow (-0.51, -0.67 eV) are dominated by a Kekule-type distortion of the
+                    graphene, most likely an artefact of the Gamma-only 3x3 cell.
 ==================  ===========================================================================
 
 Large scratch files of the codes (wavefunctions, QE ``tmp/`` directories, NWChem ``*.db`` and

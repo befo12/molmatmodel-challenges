@@ -27,8 +27,11 @@ Results
 
 Discussion
 ----------
-* The with_2D run reproduces the course reference (E_F = -4.2405 eV); the Fermi level written in
-  the course gnuplot file (-1.7174 eV) corresponds to the run without the 2D cutoff.
+* The with_2D run reproduces the course reference (E_F = -4.2405 eV, ``reference_outputs/``); the
+  Fermi level written in the ``plot_potential.gp`` of the course directory (-1.7174 eV) corresponds
+  to the run without the 2D cutoff.
+* With the 2D cutoff the potential in the vacuum is zero by construction (V_vac = 0.002 eV), so
+  W = -E_F directly.
 * The two runs give Fermi levels differing by 2.5 eV, but the same work function (4.243 vs
   4.240 eV). In a periodic calculation the zero of the electrostatic potential is arbitrary,
   so absolute eigenvalues / E_F have no physical meaning; only the difference to the vacuum

@@ -1,0 +1,9 @@
+E(C18) = -2947.320598 eV, E(Hg) = -4533.787985 eV
+
+site       E(Hg@C18)/eV  E_ads/eV E_ads/kJmol  h(Hg)/A  d(Hg-C)min/A lateral shift/A  #C within 3.9 A
+-----------------------------------------------------------------------------------------------------
+top        -7481.346431    -0.238       -22.9    3.410         3.428           0.000                4
+bridge     -7481.618851    -0.510       -49.2    3.421         3.510           3.702                2
+hollow     -7481.774037    -0.665       -64.2    3.400         3.676           0.000                6
+
+h(Hg) = height of Hg above the mean C plane; lateral shift = in-plane distance moved from the initial site

@@ -27,7 +27,7 @@ Method
 
 Results
 -------
-Geometry (2 BFGS steps, total run time 40 s)::
+Geometry (2 BFGS steps, 3 SCF calculations of ~13 s each)::
 
                     QE (PBE)      Exp.     Diff.
     r(C-H) / A        1.0941    1.0870   +0.0071

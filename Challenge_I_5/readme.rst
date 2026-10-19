@@ -48,8 +48,10 @@ Discussion
   spin = 0 the O2 entropy would be R ln 3 = 9.1 J/(mol K) too low.
 * Vibrational frequencies are a more sensitive test of the potential energy surface
   (second derivatives): very good for H2, N2 and Cl2 (< 5 %), but 7-10 % too low for O2, CO
-  and HF and 26 % too low for F2 - the same molecules for which the atomization energies
-  in Challenge I.3 were poor.
+  and HF and 26 % too low for F2. F2 and HF also had the worst atomization energies in
+  Challenge I.3, but the two tests do not fail in the same way: Cl2 has a good frequency but a
+  poor atomization energy, while O2 and CO have reasonable atomization energies but too low
+  frequencies.
 * ZPE and thermal enthalpy corrections are 0.04-0.28 eV and 0.13-0.37 eV, i.e. not
   negligible compared to reaction energies; this is why the START project adds such
   thermochemical corrections to computed adsorption energies.

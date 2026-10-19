@@ -33,7 +33,11 @@ Results
     
     Experimental lattice constant a = 5.431 A, Si-Si = 2.3517 A
 
-The default ASE run reproduces the course reference (E = -230.28007 eV, P = 0.49 kbar).
+Fmax = largest force on the atoms; the cell part of the relaxation is measured by P.
+
+The default runs reproduce the course reference outputs: ASE E = -230.28007 eV,
+P = 0.49 kbar (reference -230.280074 eV, 0.488 kbar); direct QE -16.92527471 Ry
+(reference -16.92527497 Ry).
 
 Discussion
 ----------

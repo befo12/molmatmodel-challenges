@@ -1,0 +1,10 @@
+E(C18) = -2947.320598 eV, E(Hg) = -4533.787985 eV
+
+start      E(Hg@C18)/eV  E_ads/eV  kJ/mol  h(Hg)/A  d(Hg-C)/A   final  C-C min/max (A)  dE relax/eV  steps
+----------------------------------------------------------------------------------------------------------
+top        -7481.346431    -0.238   -22.9    3.410      3.428     top    1.425/1.425       -0.001      7
+bridge     -7481.618851    -0.510   -49.2    3.421      3.510  bridge    1.402/1.472       -0.273    113
+hollow     -7481.774037    -0.665   -64.2    3.400      3.676  hollow    1.395/1.484       -0.426      8
+
+h(Hg) = height of Hg above the mean C plane; d(Hg-C) = shortest Hg-C distance;
+final = site from the nearest-C pattern; dE relax = E(last) - E(first BFGS step)

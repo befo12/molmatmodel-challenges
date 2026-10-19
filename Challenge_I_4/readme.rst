@@ -34,9 +34,11 @@ Results
         C6H6: -75.069722 eV
           N2: -16.410813 eV
 
-These energies are identical (to 6 decimals) with the reference output of the course.
+These energies are identical (to 6 decimals) with the reference output of the course
+(``quick_test.py_logfileSAVED``; the reference output has no N2 line).
 
-``water_mace.py``: optimized O-H bond length 0.9728 A (experiment 0.958 A).
+``water_mace.py``: optimized O-H bond length 0.9728 A, identical to the course
+reference (experiment 0.9572 A).
 
 ``water_mace_emt_01.py``: MACE is ~9x more accurate than EMT for the O-H bond length and
 ~17x more accurate for the H-O-H angle.

@@ -38,7 +38,8 @@ The N2 result (1.112 A, 10.31 eV) reproduces the reference output of the course 
 Discussion
 ----------
 * MACE-MP bond lengths are good for all molecules (within ~0.04 A of experiment),
-  much better than EMT, which shortens all bonds by ~0.04-0.1 A.
+  much better than EMT, whose bonds are off by 0.04-0.1 A (H2 too long, N2, O2 and CO too
+  short).
 * MACE-MP atomization energies are reasonable for H2, N2, O2 and CO (errors 5-8 %),
   but fail for the halogen-containing molecules: Cl2 and HF are strongly underbound and
   F2 even comes out unbound (negative atomization energy).
