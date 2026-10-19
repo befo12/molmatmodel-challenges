@@ -15,7 +15,8 @@ Calculations (outputs in ``*.log``)
 3. NWChem B3LYP geometry optimization, same basis/ECP:
    ``nwchem/geopt/uo2i2water2_ecp_b3lyp_geopt.nw`` (6 MPI, 133 s, converged).
 
-``bonds_u.py <nwchem output>`` extracts the bond lengths from the final NWChem geometry.
+``bonds_u.py <nwchem output>`` extracts the bond lengths from the final NWChem geometry
+(``bonds_u.py.log``: run on ``nwchem/geopt/uo2i2water2_ecp_b3lyp_geopt.nw.log``).
 
 Results (average bond lengths, Angstrom; linear O=U=O, I-U-I, Ow-U-Ow)
 ------------------------------------------------------------------------
